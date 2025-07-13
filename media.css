@@ -6,7 +6,8 @@
     /* overflow-x: hidden; */
     /* margin: 0; */
   }
- 
+  .section-bg .card-container{
+     max-width: 90%; margin: 0 auto; }
   .header {
     padding: 1.3rem 5%;
     position: relative;
