@@ -863,8 +863,8 @@ h3 {
 /* Media Queries */
 @media (max-width: 921px) {
   html, body {
-    /* overflow-x: hidden; */
-    /* margin: 0; */
+    overflow-x: hidden;
+    margin: 0;
   }
 
   .header {
@@ -1170,10 +1170,14 @@ h3 {
 }
 
 @media (max-width: 600px) {
-  .footer-columns,
+  .footer-columns{
+        display: grid;
+    grid-template-columns: 1fr;
+  }
   .expert-cards,
   .pricing-cards,
   .practice-cards {
+    margin: 70px;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -1220,5 +1224,9 @@ h3 {
 
   .pricing-card i.fa-heart {
     font-size: 60px;
+  }
+  img{
+    /* max-width: 90%; */
+    /* margin: 0 auto; */
   }
 }
